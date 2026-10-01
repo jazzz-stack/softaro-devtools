@@ -1,0 +1,76 @@
+.output-area {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.output-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.output-copy-btn {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 0.85rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.output-copy-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.output-copy-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.output-box {
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  overflow: auto;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.output-box.error {
+  border-color: var(--danger);
+  background-color: rgba(220, 53, 69, 0.05);
+}
+
+.output-content {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--text-primary);
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.output-error {
+  color: var(--danger);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.output-loading {
+  color: var(--text-secondary);
+  font-style: italic;
+  text-align: center;
+  padding: var(--spacing-lg);
+}

@@ -46,12 +46,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-size: small;
 }
 
 .header-nav {
   display: flex;
-  gap: var(--spacing-lg);
   align-items: center;
+  font-size: small;
 }
 
 .nav-link {
@@ -60,7 +61,7 @@
   font-weight: 500;
   line-height: 1;
   transition: color 0.2s ease;
-  padding: 0 var(--spacing-md);
+  padding: 12px;
   border-radius: 4px;
 }
 
@@ -74,7 +75,11 @@
 }
 
 @media (max-width: 768px) {
+  .header-container {
+    padding: var(--spacing-sm);
+  }
+
   .header-nav {
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
   }
 }

@@ -1,3 +1,6 @@
+.h1{
+    font-size: 1rem;
+}
 .tool-layout {
   display: flex;
   flex-direction: column;
@@ -7,7 +10,7 @@
 
 .tool-header {
   background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
-  padding: var(--spacing-md) 0;
+  padding: 2px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -15,27 +18,27 @@
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-md);
+  text-align: center;
 }
 
 .tool-description {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 0.7rem;
   margin: 0;
   white-space: nowrap;
 }
 
 .tool-container {
   flex: 1;
-  padding: var(--spacing-lg) 0;
 }
 
 .tool-header h1 {
-  font-size: 1.75rem;
+  font-size: 0.7rem;
   margin: 0;
   flex-shrink: 0;
 }
@@ -50,7 +53,7 @@
   }
 
   .tool-header h1 {
-    font-size: 1.5rem;
+    font-size: 0.7rem;
   }
 
   .tool-container {
